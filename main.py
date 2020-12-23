@@ -8,7 +8,7 @@ def main():
     with open('session.json') as f:
         session_cookies = json.load(f)
 
-    client = NguyenManhBot('username', 'password', session_cookies=session_cookies)
+    client = NguyenManhBot('0585847634', 'tacthienbang', session_cookies=session_cookies)
 
     # Lấy session và lưu vào file để lần sau dùng cho đăng nhập
     session_cookies_new = client.getSession()
